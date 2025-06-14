@@ -17,3 +17,69 @@ html {
 #footer {
    margin-top: 100vh;
 }
+
+
+/* Header */
+#header {
+  background-color: #fff;
+  padding: 2% 0;
+}
+#header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#header .header .navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 5%;
+  width: 70%;
+}
+#header .header .navigation a {
+  text-decoration: none;
+  color: #494947;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+#header .header .navigation a:hover,
+#header .header .navigation .active {
+  color: #138BC9;
+  transition: 0.3s;
+}
+.burger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #header .header {
+    flex-direction: row;
+  }
+  .burger {
+    display: block;
+  }
+  #header .header .navigation {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    background: white;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 99;
+  }
+  #header .header .navigation.open {
+    display: flex;
+  }
+  .navigation a {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+}
