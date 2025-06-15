@@ -1,6 +1,8 @@
 body {
    font-family: "Atyp Display";
    background-color: #ffffff;
+   display: flex;
+   flex-direction: column;
 }
 html {
    scroll-behavior: smooth;
@@ -84,6 +86,9 @@ html {
 #footer {
    background-color: #138bc9;
    padding: 2% 0;
+   bottom: 0;
+   width: 100%;
+   position: fixed;
 }
 #footer p {
    margin: 0;
