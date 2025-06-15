@@ -20,6 +20,14 @@ export default function Licences({ bgImage }) {
             </div>
          </div>
          <div className="container">
+         
+         <div className="toptext">
+               <div className="title">Лицензии</div>
+               <div className="textname">
+               Компания Safe Expert KZ осуществляет деятельность на основании всех необходимых лицензий и разрешений, выданных уполномоченными органами Республики Казахстан.
+               </div>
+            </div>
+
          <div className="licence-section">
          <div className="licence-section__grid">
             {[1, 2].map((_, i) => (

@@ -42,7 +42,7 @@
     padding: 10px 20px;
     font-size: 12px;
     font-family: "Atyp Display";
-    background-color: #007bff;
+    background-color: #138bc9;
     color: white;
     border: none;
     border-radius: 9999px;
@@ -135,7 +135,7 @@
   }
   
   .licence-card__btn--download {
-    background-color: #007bff;
+    background-color: #138bc9;
     color: white;
   }
   
