@@ -81,3 +81,61 @@
     color: #444;
   }
   
+
+  .licence-section__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  @media (min-width: 768px) {
+    .licence-section__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .licence-card {
+    background: #fff;
+    border-radius: 24px;
+    border: 1px solid #e6e6e6;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+  }
+  
+  .licence-card__image {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    object-fit: cover;
+  }
+  
+  .licence-card__buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+  
+  .licence-card__btn {
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-family: "Atyp Display", sans-serif;
+  }
+  
+  .licence-card__btn--view {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .licence-card__btn--download {
+    background-color: #007bff;
+    color: white;
+  }
+  
