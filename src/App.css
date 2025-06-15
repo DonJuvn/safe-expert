@@ -122,9 +122,12 @@ html {
 }
 #footer .footer #title {
    color: #ffffff70;
+   font-size: 18px;
+   text-transform: none;
 }
 #footer .footer #text {
    color: #ffffff;
+   font-size: 16px;
 }
 #footer .footer .bottom {
    margin-top: 2%;
@@ -163,11 +166,7 @@ html {
    }
 }
 
-/* Main */
-#main {
-   display: flex;
-   flex-direction: column;
-}
+/* BG */
 .bg {
    position: relative;
    width: 100%;
@@ -189,7 +188,7 @@ html {
    background: linear-gradient(to top, rgba(0.5, 0.6, 0.8, 1), transparent);
    z-index: 1;
 }
-.bg .container .text{
+.bg .container .text {
    position: absolute;
    bottom: 0;
    z-index: 789;
@@ -198,14 +197,14 @@ html {
    width: 45%;
    padding-bottom: 5%;
 }
-.bg h1{
+.bg h1 {
    font-weight: 400;
    font-size: 42px;
    line-height: 48px;
    color: #fff;
    margin: 0;
 }
-.bg a{
+.bg a {
    text-decoration: none;
    color: #fff;
    padding: 0.8rem 1.5rem;
@@ -214,7 +213,72 @@ html {
    margin-top: 3%;
    width: fit-content;
 }
-.bg a:hover{
+.bg a:hover {
    transform: scale(1.1);
-   transition: .3s;
+   transition: 0.3s;
+}
+
+/* Main */
+#main {
+   display: flex;
+   flex-direction: column;
+}
+#main .main {
+   display: flex;
+   flex-direction: column;
+   padding: 5% 0;
+}
+#main .main .top {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: end;
+}
+#main .main .top .left {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+}
+#title {
+   margin: 0;
+   font-size: 32px;
+   font-weight: 500;
+   line-height: 32px;
+   color: #494947;
+   margin-bottom: 3%;
+   text-transform: uppercase;
+}
+#text {
+   margin: 0;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 120%;
+   color: #49494780;
+   text-decoration: none;
+}
+#main .main .top .right {
+   display: flex;
+   flex-direction: row;
+   width: 40%;
+   justify-content: end;
+   gap: 10%;
+}
+#main .main .top .right #text {
+   color: #494947;
+   align-items: center;
+}
+#main .main .top .right #text img {
+   object-fit: contain;
+}
+#main .main .top .right #text:hover {
+   transform: scale(1.1);
+   transition: 0.3s;
+}
+#main #mainbg {
+   width: 100%;
+   border-radius: 30px;
+   height: 80vh;
+   object-fit: cover;
+   margin-top: 4%;
+   /* object-position: top; */
 }
