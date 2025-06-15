@@ -1,5 +1,6 @@
-export default function Main({ bgImage }) {
-   return (
+import Gallery from "../components/gallery";
+
+export default function Main({ bgImage }) {   return (
       <div id="main">
          <div className="bg">
             <img src={bgImage} alt="background" />
@@ -45,7 +46,24 @@ export default function Main({ bgImage }) {
                      </a>
                   </div>
                </div>
-               <img id='mainbg' src={process.env.PUBLIC_URL + "img/mainbg.jpg"} alt="" />
+               <img
+                  id="mainbg"
+                  src={process.env.PUBLIC_URL + "img/mainbg.jpg"}
+                  alt=""
+               />
+            </div>
+            <div className="gallery">
+               <div className="top">
+                  <div className="left">
+                     <h1 id="title">Галерея</h1>
+                     <p id="text">
+                        Мы гордимся своей работой и открыто делимся
+                        результатами. Посмотрите, как мы делаем безопасность
+                        доступной, понятной и эффективной!
+                     </p>
+                  </div>
+               </div>
+               <Gallery />
             </div>
          </div>
       </div>
