@@ -1,5 +1,4 @@
-import Gallery from "../components/gallery";
-export default function Main({ bgImage }) {
+import Gallery from "../components/gallery";export default function Main({ bgImage }) {
    return (
       <div id="main">
          <div className="bg">
@@ -10,7 +9,13 @@ export default function Main({ bgImage }) {
                      МЫ СОЗДАЕМ БЕЗОПАСНЫЕ УСЛОВИЯ ТРУДА С ВЫГОДАМИ ДЛЯ
                      РАБОТОДАТЕЛЯ!
                   </h1>
-                  <a href="#">Подробнее</a>
+                  <a
+                     href="https://wa.me/77078070737"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
+                     Подробнее
+                  </a>
                </div>
             </div>
          </div>

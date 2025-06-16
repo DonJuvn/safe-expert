@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react";import { Link } from "react-router-dom";
 
 export default function Services({ bgImage }) {
    const services = [
@@ -35,7 +34,13 @@ export default function Services({ bgImage }) {
                      МЫ СОЗДАЕМ БЕЗОПАСНЫЕ УСЛОВИЯ ТРУДА С ВЫГОДАМИ ДЛЯ
                      РАБОТОДАТЕЛЯ!
                   </h1>
-                  <a href="#">Подробнее</a>
+                  <a
+                     href="https://wa.me/77078070737"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
+                     Подробнее
+                  </a>
                </div>
             </div>
          </div>
