@@ -1,6 +1,6 @@
 import Gallery from "../components/gallery";
-
-export default function Main({ bgImage }) {   return (
+export default function Main({ bgImage }) {
+   return (
       <div id="main">
          <div className="bg">
             <img src={bgImage} alt="background" />
@@ -52,7 +52,7 @@ export default function Main({ bgImage }) {   return (
                   alt=""
                />
             </div>
-            <div className="gallery">
+            <div id="gallery" className="gallery">
                <div className="top">
                   <div className="left">
                      <h1 id="title">Галерея</h1>
