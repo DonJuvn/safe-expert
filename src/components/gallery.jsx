@@ -6,6 +6,9 @@ const images = [
    process.env.PUBLIC_URL + "/img/gallery2.jpg",
    process.env.PUBLIC_URL + "/img/gallery3.jpg",
    process.env.PUBLIC_URL + "/img/gallery4.jpg",
+   // process.env.PUBLIC_URL + "/img/gallery5.jpeg",
+   // process.env.PUBLIC_URL + "/img/gallery6.jpeg",
+
 ];
 
 const Gallery = () => {

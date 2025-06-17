@@ -25,7 +25,7 @@ export default function Licences({ bgImage }) {
             <div className="toptext">
                <div className="title">Лицензии</div>
                <div className="textname">
-                  Компания Safe Expert KZ осуществляет деятельность на основании
+                  Компания Safe Expert осуществляет деятельность на основании
                   всех необходимых лицензий и разрешений, выданных
                   уполномоченными органами Республики Казахстан.
                </div>
