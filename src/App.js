@@ -19,7 +19,7 @@ import Services from "./pages/Services";
 function App() {
    return (
       <>
-         <Header />
+         {/* <Header />
          <Routes>
             <Route path="/" element={<Main bgImage="/img/MainBg.png" />} />
             <Route
@@ -36,7 +36,7 @@ function App() {
             />
          </Routes>
 
-         <Footer />
+         <Footer /> */}
       </>
    );
 }
