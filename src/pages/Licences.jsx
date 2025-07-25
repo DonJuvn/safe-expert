@@ -32,7 +32,7 @@ export default function Licences({ bgImage }) {
             </div>
 
             <div className="licence-section">
-               <div className="licence-section__grid">
+            <div className="licence-section__grid">
                   {[1, 2].map((_, i) => (
                      <div className="licence-card" key={i}>
                         <img
@@ -41,12 +41,21 @@ export default function Licences({ bgImage }) {
                            className="licence-card__image"
                         />
                         <div className="licence-card__buttons">
-                           <button className="licence-card__btn licence-card__btn--view">
+                           <a
+                              href={`/files/licence${i + 1}.pdf`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="licence-card__btn licence-card__btn--view"
+                           >
                               Посмотреть
-                           </button>
-                           <button className="licence-card__btn licence-card__btn--download">
+                           </a>
+                           <a
+                              href={`/files/licence${i + 1}.pdf`}
+                              download
+                              className="licence-card__btn licence-card__btn--download"
+                           >
                               ⬇ Скачать
-                           </button>
+                           </a>
                         </div>
                      </div>
                   ))}
